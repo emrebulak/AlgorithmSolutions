@@ -24,17 +24,17 @@
 
 let nums = [1, 2, 3, 4, 3];
 
-// function containsDuplicate(numbers) {
-//   let duplicated = false;
-//   nums = numbers.sort();
-//   for (let i = 0; i < nums.length; i++) {
-//     for (let j = i + 1; j < nums.length; j++) {
-//       if (nums[i] == nums[j]) duplicated = true;
-//     }
-//   }
+function containsDuplicate(numbers) {
+  let duplicated = false;
+  nums = numbers.sort();
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] == nums[j]) duplicated = true;
+    }
+  }
 
-//   return duplicated;
-// }
+  return duplicated;
+}
 
 // BIG O => TİME COMPLEXITY => O(n) -- SPACE COMPLEXITY => O(1)
 function containsDuplicateOn(numbers) {
@@ -42,4 +42,3 @@ function containsDuplicateOn(numbers) {
 }
 
 console.log(containsDuplicateOn(nums));
-//containsDuplicate(nums);
